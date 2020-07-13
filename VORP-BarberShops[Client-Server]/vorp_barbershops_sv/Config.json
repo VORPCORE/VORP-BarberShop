@@ -1,0 +1,13 @@
+{
+  "defaultlang": "Es",
+
+  "BarberShops": [
+    {
+      "name": "Barberia",
+      "BlipIcon": 1195729388,
+      "EnterShop": [ 2657.73, -1181.7, 53.08, 2.0 ],
+      "NPCShop": [ 2655.91, -1182.29, 52.8, 303.67 ],
+      "NPCModel": "S_M_M_Barber_01"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vorp_barbershops_cl", "vorp_barbershops_cl\vorp_barbershops_cl.csproj", "{95F53022-CF3F-4003-8CDE-32E39179C095}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vorp_barbershops_sv", "vorp_barbershops_sv\vorp_barbershops_sv.csproj", "{3FAC1C36-018A-415A-9A53-EEB8994E6C2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95F53022-CF3F-4003-8CDE-32E39179C095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95F53022-CF3F-4003-8CDE-32E39179C095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95F53022-CF3F-4003-8CDE-32E39179C095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95F53022-CF3F-4003-8CDE-32E39179C095}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FAC1C36-018A-415A-9A53-EEB8994E6C2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FAC1C36-018A-415A-9A53-EEB8994E6C2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FAC1C36-018A-415A-9A53-EEB8994E6C2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FAC1C36-018A-415A-9A53-EEB8994E6C2B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80D3B371-C520-476A-BE51-4BFB0F0562A5}
+	EndGlobalSection
+EndGlobal
