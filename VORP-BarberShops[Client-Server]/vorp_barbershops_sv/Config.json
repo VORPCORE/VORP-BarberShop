@@ -1,12 +1,15 @@
 {
   "defaultlang": "Es",
 
+  "BarberCost": 10.0,
+
   "BarberShops": [
     {
       "name": "Barberia",
-      "BlipIcon": 1195729388,
-      "EnterShop": [ 2657.73, -1181.7, 53.08, 2.0 ],
-      "NPCShop": [ 2655.91, -1182.29, 52.8, 303.67 ],
+      "BlipIcon": -2090472724,
+      "EnterShop": [ 2657.73, -1181.7, 53.08, 1.5 ],
+      "ExitShop": [ 2658.06, -1181.47, 52.3, 259.55 ],
+      "NPCShop": [ 2655.53, -1182.20, 52.3, 303.67 ],
       "NPCModel": "S_M_M_Barber_01"
     }
   ]

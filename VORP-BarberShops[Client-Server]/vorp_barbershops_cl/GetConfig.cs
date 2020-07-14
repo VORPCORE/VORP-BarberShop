@@ -36,6 +36,7 @@ namespace vorp_barbershops_cl
             }
 
             InitBarbers.InitShops();
+
         }
     }
 }

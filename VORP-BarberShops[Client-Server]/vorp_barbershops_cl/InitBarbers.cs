@@ -13,6 +13,8 @@ namespace vorp_barbershops_cl
         public static List<int> ShopsBlips = new List<int>();
         public static List<int> ShopsPeds = new List<int>();
 
+        public static int barberID = 0;
+
         public InitBarbers()
         {
             Tick += onStore;
@@ -48,11 +50,14 @@ namespace vorp_barbershops_cl
                 API.SetEntityNoCollisionEntity(API.PlayerPedId(), _PedShop, false);
                 API.SetEntityCanBeDamaged(_PedShop, false);
                 API.SetEntityInvincible(_PedShop, true);
+                API.SetBlockingOfNonTemporaryEvents(_PedShop, true);
                 await Delay(1000);
                 API.FreezeEntityPosition(_PedShop, true);
 
                 await Delay(100);
             }
+
+            BarberMenu.GetMenu();
 
         }
 
@@ -77,6 +82,9 @@ namespace vorp_barbershops_cl
                     if (API.IsControlJustPressed(2, 0xD9D0E1C0))
                     {
                         Function.Call((Hash)0x322BFDEA666E2B0E, API.PlayerPedId(), x, y, z, 2.0f, -1, 1, 1, 1, 1);
+                        BarberMenu.GetMenu().OpenMenu();
+                        TriggerEvent("vorp:setInstancePlayer", true);
+                        barberID = i;
                         await Delay(1000);
                     }
                 }
