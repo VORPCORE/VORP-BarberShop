@@ -1,5 +1,5 @@
 # VORP-BarberShop
-Barber shop system for vorp core
+Barber & Hair Shop system for VORP Core
 
 ## Requirements
 - [VORP Core](https://github.com/VORPCORE/VORP-Core/releases)
