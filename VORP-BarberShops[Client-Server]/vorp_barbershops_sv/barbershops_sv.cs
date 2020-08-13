@@ -31,7 +31,7 @@ namespace vorp_barbershops_sv
                     newcomps.Add("Beard", beard);
                     newcomps.Add("Hair", hair);
                     TriggerEvent("vorpcharacter:setPlayerSkinChange", _source, newcomps.ToString());
-                    TriggerClientEvent("vorp:Tip", _source, string.Format(LoadConfig.Langs["Buyed"], cost), 2000);
+                    TriggerClientEvent("vorp:Tip", _source, string.Format(LoadConfig.Langs["Buyed"], cost.ToString()), 2000);
                 }
                 else
                 {
