@@ -19,6 +19,7 @@ namespace vorp_barbershops_sv
         {
             int _source = int.Parse(player.Handle);
             double cost = LoadConfig.Config["BarberCost"].ToObject<double>();
+            PlayerList pl = new PlayerList();
             TriggerEvent("vorp:getCharacter", _source, new Action<dynamic>(async (user) =>
             {
                 double money = user.money;
@@ -31,11 +32,11 @@ namespace vorp_barbershops_sv
                     newcomps.Add("Beard", beard);
                     newcomps.Add("Hair", hair);
                     TriggerEvent("vorpcharacter:setPlayerSkinChange", _source, newcomps.ToString());
-                    TriggerClientEvent("vorp:Tip", _source, string.Format(LoadConfig.Langs["Buyed"], cost.ToString()), 2000);
+                    player.TriggerEvent("vorp:Tip", string.Format(LoadConfig.Langs["Bought"], cost.ToString()), 2000);
                 }
                 else
                 {
-                    TriggerClientEvent("vorp:Tip", _source, LoadConfig.Langs["NoMoney"], 2000);
+                    player.TriggerEvent("vorp:Tip", LoadConfig.Langs["NoMoney"], 2000);
                 }
 
 

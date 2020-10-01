@@ -15,5 +15,5 @@
   "FinishBtn": "Pagar corte por {0}$",
   "SubFinishBtn": "Terminar y Pagar",
   "NoMoney": "No tienes suficiente dinero",
-  "Buyed": "Has pagado {0}$ al barbero"
+  "Bought": "Has pagado {0}$ al barbero"
 }
