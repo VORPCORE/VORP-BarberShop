@@ -24,9 +24,6 @@ namespace vorp_barbershops_cl
             API.ClearPedSecondaryTask(API.PlayerPedId());
             API.ClearPedTasksImmediately(API.PlayerPedId(), 1, 1);
             await Delay(50);
-            API.SetEntityCoords(API.PlayerPedId(), GetConfig.Config["BarberShops"][InitBarbers.barberID]["ExitShop"][0].ToObject<float>(), GetConfig.Config["BarberShops"][InitBarbers.barberID]["ExitShop"][1].ToObject<float>(), GetConfig.Config["BarberShops"][InitBarbers.barberID]["ExitShop"][2].ToObject<float>(), false, false, false, false);
-            API.SetEntityHeading(API.PlayerPedId(), GetConfig.Config["BarberShops"][InitBarbers.barberID]["ExitShop"][3].ToObject<float>());
-            TriggerEvent("vorp:setInstancePlayer", false);
             TriggerEvent("vorpcharacter:refreshPlayerSkin");
         }
 
@@ -82,7 +79,6 @@ namespace vorp_barbershops_cl
                 if (API.IsPedMale(API.PlayerPedId()))
                 {
                     uint beard = ConvertValue(skin.Beard);
-                    Debug.WriteLine(beard.ToString());
                     int index = SkinUtils.BEARD_MALE.IndexOf(beard);
                     if (index != -1)
                     {
@@ -90,7 +86,6 @@ namespace vorp_barbershops_cl
                         lastBeard = beard;
                     }
                     uint hair = ConvertValue(skin.Hair);
-                    Debug.WriteLine(hair.ToString());
                     int index2 = SkinUtils.HAIR_MALE.IndexOf(hair);
                     if (index2 != -1)
                     {
@@ -101,7 +96,6 @@ namespace vorp_barbershops_cl
                 else
                 {
                     uint hair = ConvertValue(skin.Hair);
-                    Debug.WriteLine(hair.ToString());
                     int index2 = SkinUtils.HAIR_FEMALE.IndexOf(hair);
                     if (index2 != -1)
                     {
@@ -117,12 +111,7 @@ namespace vorp_barbershops_cl
         {
             TriggerServerEvent("vorpbarbershop:BuyService", lastBeard, lastHair);
             API.ClearPedTasks(API.PlayerPedId(), 1, 1);
-            API.ClearPedSecondaryTask(API.PlayerPedId());
-            API.ClearPedTasksImmediately(API.PlayerPedId(), 1, 1);
-            await Delay(50);
-            API.SetEntityCoords(API.PlayerPedId(), GetConfig.Config["BarberShops"][InitBarbers.barberID]["ExitShop"][0].ToObject<float>(), GetConfig.Config["BarberShops"][InitBarbers.barberID]["ExitShop"][1].ToObject<float>(), GetConfig.Config["BarberShops"][InitBarbers.barberID]["ExitShop"][2].ToObject<float>(), false, false, false, false);
-            API.SetEntityHeading(API.PlayerPedId(), GetConfig.Config["BarberShops"][InitBarbers.barberID]["ExitShop"][3].ToObject<float>());
-            TriggerEvent("vorp:setInstancePlayer", false);
+            await Delay(2000);
         }
 
         public static uint ConvertValue(string s)

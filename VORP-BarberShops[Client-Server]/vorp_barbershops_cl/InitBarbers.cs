@@ -83,12 +83,10 @@ namespace vorp_barbershops_cl
                     {
                         Function.Call((Hash)0x322BFDEA666E2B0E, API.PlayerPedId(), x, y, z, 2.0f, -1, 1, 1, 1, 1);
                         BarberMenu.GetMenu().OpenMenu();
-                        TriggerEvent("vorp:setInstancePlayer", true);
                         barberID = i;
                         await Delay(1000);
                     }
                 }
-
             }
         }
 
