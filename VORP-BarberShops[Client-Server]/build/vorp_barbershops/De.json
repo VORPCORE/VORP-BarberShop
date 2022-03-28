@@ -1,0 +1,19 @@
+{
+    "PressToOpen": "Drücke [~e~Leertaste~q~] für eine neue Frisur",
+
+    "TitleBarberMenu": "Friseursalon",
+    "SubTitleBarberMenu": "Haarschnitte",
+    "BeardList": "Bart schneiden",
+    "BeardDesc": "Wähle den Schnitt, der dir am besten gefällt.",
+    "Beard": "Bart #",
+    "NoBeard": "Ohne Bart",
+    "HairList": "Haarschnitte",
+    "HairDesc": "Wähle den Schnitt, der dir am besten gefällt.",
+    "Hair": "Haar #",
+    "NoHair": "Ohne Haar",
+    "NoExist": "Da ist nichts",
+    "FinishBtn": "Du bezahlst {0}$",
+    "SubFinishBtn": "Beenden und bezahlen",
+    "NoMoney": "Du hast nicht genug Geld",
+    "Bought": "Du hast {0}$ bezahlt fuer den Friseur"
+}
